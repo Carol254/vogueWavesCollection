@@ -1,0 +1,11 @@
+.main{
+    background-color: #000;
+    height: 100vh;
+}
+h1{
+    color:#fff;
+    font-size: 80px;
+}
+.items{
+    padding: 50px 0px 0px 50px;
+}

@@ -5,3 +5,7 @@
 .nav-link,.navbar-brand{
     color: #fff;
 }
+.bi-search,.bi-cart4{
+    color: #fff;
+    margin: auto;
+}

@@ -10,6 +10,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { NewArrivalsComponent } from './new-arrivals/new-arrivals.component';
 import { ShopComponent } from './shop/shop.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
     AboutUsComponent,
     NewArrivalsComponent,
     ShopComponent,
-    ProductAlertsComponent
+    ProductAlertsComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

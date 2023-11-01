@@ -1,4 +1,7 @@
+import { products } from './../products';
 import { Component } from '@angular/core';
+import { Product } from '../products';
+
 
 @Component({
   selector: 'app-shop',
@@ -7,6 +10,6 @@ import { Component } from '@angular/core';
 })
 export class ShopComponent {
 
-
+ products = products;
 
 }

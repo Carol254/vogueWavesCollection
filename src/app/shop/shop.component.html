@@ -1,1 +1,13 @@
-<p>shop works!</p>
+<h2>Products</h2>
+<div class="container">
+    <div class="d-flex flex-wrap gap-4">
+        <div *ngFor="let product of products">
+            <div class="card">
+                <img class="card-img" src="{{product.image}}">
+                <p>{{product.name}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

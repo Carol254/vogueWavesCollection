@@ -4,7 +4,10 @@
         <div *ngFor="let product of products">
             <div class="card">
                 <img class="card-img" src="{{product.image}}">
-                <p>{{product.name}}</p>
+                <a [title]="product.name + ' details'" style="text-align: center;">{{product.name}}</a>
+                <p *ngIf="product.description">
+                   <b>Description:</b>{{product.description}}
+                </p>
             </div>
         </div>
     </div>

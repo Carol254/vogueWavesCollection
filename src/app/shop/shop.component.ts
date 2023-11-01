@@ -12,4 +12,8 @@ export class ShopComponent {
 
  products = products;
 
+ share(){
+  window.alert('The product has been shared!');
+ }
+
 }

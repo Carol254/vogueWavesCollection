@@ -5,9 +5,10 @@
             <div class="card">
                 <img class="card-img" src="{{product.image}}">
                 <a [title]="product.name + ' details'" style="text-align: center;">{{product.name}}</a>
-                <p *ngIf="product.description">
+                <!-- <p *ngIf="product.description">
                    <b>Description:</b>{{product.description}}
-                </p>
+                </p> -->
+                <button class="btn m-3" (click)="share()"> Share</button>
             </div>
         </div>
     </div>

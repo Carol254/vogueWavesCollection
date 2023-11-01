@@ -3,3 +3,8 @@
     height: 200px;
     object-fit: contain;
 }
+.btn{
+    background-color: #eaaa30;
+    color: #000;
+    font-weight: bold;
+}

@@ -1,14 +1,14 @@
-<h2>Products</h2>
-<div class="container">
+<div class="container mt-3">
     <div class="d-flex flex-wrap gap-4">
         <div *ngFor="let product of products">
             <div class="card">
                 <img class="card-img" src="{{product.image}}">
                 <a [title]="product.name + ' details'" style="text-align: center;">{{product.name}}</a>
                 <!-- <p *ngIf="product.description">
-                   <b>Description:</b>{{product.description}}
+                   {{product.description}}
                 </p> -->
                 <button class="btn m-3" (click)="share()"> Share</button>
+                <app-product-alerts [product]="product"></app-product-alerts>
             </div>
         </div>
     </div>

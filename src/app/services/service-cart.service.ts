@@ -10,7 +10,8 @@ export class CartService{
 
     addToCart(product:Product){
         this.items.push(product);
-        // console.log(this.items.length);
+        console.log(this.items.length);
+        return this.items;
     }
 
     getItems(){

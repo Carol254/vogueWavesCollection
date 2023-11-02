@@ -12,6 +12,7 @@ import { ShopComponent } from './shop/shop.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { WildCardComponent } from './wild-card/wild-card.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { WildCardComponent } from './wild-card/wild-card.component';
     ShopComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
-    WildCardComponent
+    WildCardComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ import { WildCardComponent } from './wild-card/wild-card.component';
       {path:'home',component:HomeComponent},
       {path:'products',component:ShopComponent},
       {path:'products/:productId',component:ProductDetailsComponent},
+      {path: 'cart',component:CartComponent},
       {path: '**',component:WildCardComponent}
     ])
   ],

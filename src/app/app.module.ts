@@ -29,7 +29,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     RouterModule.forRoot([
       {path:'',pathMatch: 'full',redirectTo:'home'},
       {path:'home',component:HomeComponent},
-      {path:'shop',component:ShopComponent}
+      {path:'products',component:ShopComponent},
+      {path:'products/:productId',component:ProductDetailsComponent}
     ])
   ],
   providers: [],

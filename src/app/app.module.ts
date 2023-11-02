@@ -13,6 +13,8 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { WildCardComponent } from './wild-card/wild-card.component';
 import { CartComponent } from './cart/cart.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
   declarations: [
@@ -25,17 +27,20 @@ import { CartComponent } from './cart/cart.component';
     ProductAlertsComponent,
     ProductDetailsComponent,
     WildCardComponent,
-    CartComponent
+    CartComponent,
+    ShippingComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {path:'',pathMatch: 'full',redirectTo:'home'},
       {path:'home',component:HomeComponent},
       {path:'products',component:ShopComponent},
       {path:'products/:productId',component:ProductDetailsComponent},
       {path: 'cart',component:CartComponent},
+      {path:'shipping',component:ShippingComponent},
       {path: '**',component:WildCardComponent}
     ])
   ],

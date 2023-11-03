@@ -115,3 +115,23 @@ h5{
         align-items: center;
     }
 }
+.offers{
+    background-color: #000;
+}
+.offersContent{
+    color: #fff;
+    margin: auto;
+}
+.offers-img{
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+}
+.subscriptions{
+   text-align: center; 
+}
+.formSub{
+ justify-content: center;
+ align-items: center;
+ display: flex;
+}

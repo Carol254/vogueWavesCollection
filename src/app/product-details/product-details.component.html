@@ -1,10 +1,16 @@
-<p>product-details!</p>
+<h3>product-details</h3>
 
-<div *ngIf="product">
-    <h3>{{product.name}}</h3>
-    <h4>{{product.price | currency}}</h4>
-    <p>{{product.description}}</p>
-    <button class="btn" (click)="addToCart(product)">BUY</button>
+<div class="d-flex"  *ngIf="product"> 
+    <div class="col-lg-6">
+        <img class="prod-details-img" [src]="product.image">
+    </div>
+    <div class="col-lg-6">
+        <h3>{{product.name}}</h3>
+        <h4>{{product.price | currency}}</h4>
+        <p>{{product.description}}</p>
+        <button class="btn" (click)="addToCart(product)">ADD TO CART</button>
+    </div>
 </div>
+
 
 <h3 *ngIf="!product">Product not Found!</h3>

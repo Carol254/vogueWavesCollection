@@ -1,0 +1,13 @@
+.btn{
+    background-color: #eaaa30;
+    color: #000;
+    font-weight: bold;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.prod-details-img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}

@@ -1,0 +1,12 @@
+.btn {
+    background-color: #eaaa30;
+    color: #000;
+    font-weight: bold;
+}
+.cartItems{
+    text-align: center;
+}
+.prices{
+    text-decoration: none;
+    color: #000;
+}

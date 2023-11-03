@@ -1,17 +1,17 @@
 <div class="d-flex">
-  <div class="col-6">
+  <div class="col-6 cartItems">
       <div *ngIf="items.length > 0">
         <div class="cart-item" *ngFor="let item of items">
-            <span>{{item.name}}</span>
-            <span>{{item.price | currency}}</span>
+            <h3 class="cartItems">{{item.name}}</h3>
+            <h3 class="cartItems">{{item.price | currency}}</h3>
         </div>
     
         <div class="cart-total">
-            Total: {{getTotalPrice() | currency}}
-          </div>
+           <h3>Total: {{getTotalPrice() | currency}}</h3> 
+        </div>
     
         <p>
-            <a routerLink="/shipping">Shipping Prices</a>
+            <a routerLink="/shipping" class="btn prices">Shipping Prices</a>
         </p>
     </div>
     
@@ -21,25 +21,27 @@
   </div>
 
   <div class="col-6">
+    <div class="column cartForm">
       <form [formGroup]="checkOutForm" (ngSubmit)="onSubmit()">
 
-        <div>
+        <div class="col-6">
           <label for="name">
             Name
           </label>
-          <input id="name" type="text" formControlName="name">
+          <input id="name" type="text" formControlName="name" class="form-control">
         </div>
 
-        <div>
+        <div class="col-6">
           <label for="address">
             Address
           </label>
-          <input id="address" type="text" formControlName="address">
+          <input id="address" type="text" formControlName="address" class="form-control">
         </div>
 
-        <button class="button" type="submit">Purchase</button>
+        <button class="btn mt-3" type="submit">Purchase</button>
 
       </form>
+    </div>
   </div>
 </div>
 

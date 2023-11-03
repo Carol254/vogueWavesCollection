@@ -4,6 +4,10 @@
         <span>{{item.price | currency}}</span>
     </div>
 
+    <div class="cart-total">
+        Total: {{getTotalPrice() | currency}}
+      </div>
+
     <p>
         <a routerLink="/shipping">Shipping Prices</a>
     </p>

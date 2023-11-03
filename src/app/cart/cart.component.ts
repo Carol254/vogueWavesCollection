@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CartService } from '../services/service-cart.service';
 import { FormBuilder } from '@angular/forms';
 
@@ -7,9 +7,9 @@ import { FormBuilder } from '@angular/forms';
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
-export class CartComponent {
+export class CartComponent implements OnInit {
 
-
+  
 
   constructor(private cartService:CartService,
               private formBuilder:FormBuilder){
@@ -18,10 +18,23 @@ export class CartComponent {
 
   items = this.cartService.getItems();
 
+ grandTotal: number | undefined ;
+
   checkOutForm = this.formBuilder.group({
     name:'',
     address:'',
   })
+
+
+  
+  getTotalPrice() {
+    // Calculate the total price by summing up the price of each item
+    return this.items.reduce((total, item) => total + item.price, 0);
+  }
+
+  ngOnInit(): void {
+
+  }
 
   onSubmit(){
     this.items = this.cartService.clearCart();
@@ -31,4 +44,9 @@ export class CartComponent {
 
     this.checkOutForm.reset();
   }
+
+
+
+  
+  
 }

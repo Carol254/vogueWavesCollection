@@ -7,11 +7,11 @@
 .container{
     border-bottom: 1px solid black;
 }
-@media only screen and (max-width:768px){
+/* @media only screen and (max-width:768px){
     .container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-}
+} */

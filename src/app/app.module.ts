@@ -16,6 +16,7 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { OffersComponent } from './offers/offers.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { OffersComponent } from './offers/offers.component';
     WildCardComponent,
     CartComponent,
     ShippingComponent,
-    OffersComponent
+    OffersComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

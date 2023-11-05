@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Route, RouteReuseStrategy } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -19,5 +20,13 @@ export class HomeComponent {
       img1:'/assets/m-8.jpg'
     },
   ]
+
+  constructor(){
+    
+  }
+  
+  OnAbtUs(){
+
+  }
 
 }

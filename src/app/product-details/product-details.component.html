@@ -8,7 +8,22 @@
         <h3>{{product.name}}</h3>
         <h4>{{product.price | currency}}</h4>
         <p>{{product.description}}</p>
-        <button class="btn" (click)="addToCart(product)">ADD TO CART</button>
+        <div class="purchaseBtns">
+            <button class="btn">Buy Now</button>
+            <button class="btn mx-5" (click)="addToCart(product)">Add to cart</button>
+        </div>
+
+        <div class="delivery mt-3">
+            <div class="card p-2">
+                <h6> <span><i class="bi bi-truck"></i></span>Free Delivery</h6>
+                <p><u>Enter your Postal code Delivery Availability</u></p>
+            </div>
+            <div class="card   p-2">
+                <h6><span><i class="bi bi-file-check"></i></span>Return Delivery</h6>
+                <p>Free 30 Days Delivery Returns.<u>Details</u></p>
+            </div>
+        </div>
+   
     </div>
 </div>
 

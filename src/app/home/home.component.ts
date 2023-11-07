@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Route, RouteReuseStrategy } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -21,12 +22,16 @@ export class HomeComponent {
     },
   ]
 
-  constructor(){
+  constructor(private router:Router){
     
   }
   
-  OnAbtUs(){
+  OnAboutUs(){
+    this.router.navigate(['/about-us']);
+  }
 
+  onOffers(){
+    this.router.navigate(['/offers']);
   }
 
 }

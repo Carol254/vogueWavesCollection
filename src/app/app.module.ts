@@ -45,6 +45,8 @@ import { FooterComponent } from './footer/footer.component';
       {path:'products/:productId',component:ProductDetailsComponent},
       {path: 'cart',component:CartComponent},
       {path:'shipping',component:ShippingComponent},
+      {path:'offers',component:OffersComponent},
+      {path:'about-us',component:AboutUsComponent},
       {path: '**',component:WildCardComponent}
     ])
   ],

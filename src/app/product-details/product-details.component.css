@@ -26,8 +26,20 @@
 .delivery{
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
 }
 .purchaseBtns{
     display: flex;
     justify-content: space-between;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+}
+.num{
+    background-color: #eaaa30;
+    color: #000;
+    display: flex;
+    justify-content: space-around;
 }

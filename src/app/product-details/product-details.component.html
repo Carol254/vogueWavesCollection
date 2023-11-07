@@ -8,18 +8,28 @@
         <h3>{{product.name}}</h3>
         <h4>{{product.price | currency}}</h4>
         <p>{{product.description}}</p>
+        <div class="items">
+            <div class="num">
+                <div>-</div>
+                <div>1</div>
+                <div>+</div>
+            </div>
+            <div>
+                <p>Only 12 items Left!<br>Don't miss it</p>
+            </div>
+        </div>
         <div class="purchaseBtns">
             <button class="btn">Buy Now</button>
             <button class="btn mx-5" (click)="addToCart(product)">Add to cart</button>
         </div>
 
-        <div class="delivery mt-3">
+        <div class="delivery">
             <div class="card p-2">
-                <h6> <span><i class="bi bi-truck"></i></span>Free Delivery</h6>
+                <h6> <span><i class="bi bi-truck m-2"></i></span>Free Delivery</h6>
                 <p><u>Enter your Postal code Delivery Availability</u></p>
             </div>
             <div class="card   p-2">
-                <h6><span><i class="bi bi-file-check"></i></span>Return Delivery</h6>
+                <h6><span><i class="bi bi-file-check m-2"></i></span>Return Delivery</h6>
                 <p>Free 30 Days Delivery Returns.<u>Details</u></p>
             </div>
         </div>

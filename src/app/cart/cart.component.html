@@ -2,47 +2,51 @@
 <div class="d-flex _container">
   <div class="col-6 cartItems">
       <div *ngIf="items.length > 0">
-        <div class="cart-item" *ngFor="let item of items">
-            <h3 class="cartItems">{{item.name}}</h3>
-            <h3 class="cartItems">{{item.price | currency}}</h3>
-        </div>
-    
-        <div class="cart-total">
-           <h3>Total: {{getTotalPrice() | currency}}</h3> 
-        </div>
-    
-        <p>
-            <a routerLink="/shipping" class="btn prices">Shipping Prices</a>
-        </p>
-    </div>
-    
-    <div *ngIf="items.length == 0">
-        <h3>Cart is empty!</h3>
-    </div>
+          <div class="cart-item" *ngFor="let item of items">
+              <h3 class="cartItems">{{item.name}}</h3>
+              <h3 class="cartItems">{{item.price | currency}}</h3>
+          </div>
+          <div class="cart-total">
+            <h3>Total: {{getTotalPrice() | currency}}</h3> 
+          </div>      
+          <p>
+              <a routerLink="/shipping" class="btn prices">Shipping Prices</a>
+          </p>
+      </div>
+      <div *ngIf="items.length == 0">
+          <h3>Cart is empty!</h3>
+      </div>
   </div>
 
   <div class="col-6">
-    <div class="column cartForm">
-      <form [formGroup]="checkOutForm" (ngSubmit)="onSubmit()">
+      <div class="column card p-3">
+          <h4>Order Summary</h4>
+          <hr>
+          <input id="name" type="text" formControlName="name" class="form-control applyCoupon">
+          <hr>
+          <h4>Payment Details</h4>
+          <hr>
 
-        <div class="col-6">
-          <label for="name">
-            Name
-          </label>
-          <input id="name" type="text" formControlName="name" class="form-control">
-        </div>
+          <div *ngFor="let item of items">
+            {{item}}
+          </div>
 
-        <div class="col-6">
-          <label for="address">
-            Address
-          </label>
-          <input id="address" type="text" formControlName="address" class="form-control">
-        </div>
-
-        <button class="btn mt-3" type="submit">Purchase</button>
-
-      </form>
-    </div>
+          <form [formGroup]="checkOutForm" (ngSubmit)="onSubmit()">
+              <div class="col-6">
+                  <label for="name">
+                    Name
+                  </label>
+                  <input id="name" type="text" formControlName="name" class="form-control">
+              </div>
+              <div class="col-6">
+                  <label for="address">
+                    Address
+                  </label>
+                  <input id="address" type="text" formControlName="address" class="form-control">
+              </div>
+              <button class="btn mt-3" type="submit">Purchase</button>
+          </form>
+      </div>
   </div>
 </div>
 

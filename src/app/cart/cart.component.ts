@@ -9,7 +9,12 @@ import { FormBuilder } from '@angular/forms';
 })
 export class CartComponent implements OnInit {
 
-  
+  payments:any [] = [
+    {item:'Cash on Delivery'},
+    {item: 'Shopcart Card'},
+    {item: 'Paypal'},
+    {item:'Credit or Debit card'}
+  ]
 
   constructor(private cartService:CartService,
               private formBuilder:FormBuilder){
@@ -18,7 +23,7 @@ export class CartComponent implements OnInit {
 
   items = this.cartService.getItems();
 
- grandTotal: number | undefined ;
+  grandTotal: number | undefined ;
 
   checkOutForm = this.formBuilder.group({
     name:'',

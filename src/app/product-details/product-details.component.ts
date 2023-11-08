@@ -10,8 +10,9 @@ import { CartService } from '../services/service-cart.service';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  product:Product | undefined;
+  product!: Product;
   count: number = 1;
+  totalPrice!: number;
 
   constructor(private route:ActivatedRoute,
               private cartService:CartService){}
@@ -21,7 +22,9 @@ export class ProductDetailsComponent implements OnInit {
 
     const productIdFromRoute = Number(routeParams.get('productId'));
 
-    this.product = products.find(product =>product.id === productIdFromRoute);  
+    this.product = products.find(product =>product.id === productIdFromRoute); 
+    
+    this.totalPrice = this.product.price;
   }
 
   addToCart(product: Product){
@@ -31,12 +34,14 @@ export class ProductDetailsComponent implements OnInit {
 
   onAddItems(){
     this.count ++;
+    this.totalPrice = this.product.price * this.count;
   }
 
   onRemoveItems(){
     if(this.count > 1){
       this.count --;
     }
-  
+    this.totalPrice = this.product.price * this.count;
   }
+
 }

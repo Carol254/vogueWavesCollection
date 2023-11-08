@@ -7,7 +7,9 @@
     object-fit: contain;
 }
 .btn{
-    background-color: #eaaa30;
+    background-color: #fff;
     color: #000;
     font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid #eaaa30;
 }

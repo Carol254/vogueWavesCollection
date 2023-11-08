@@ -34,6 +34,9 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   onRemoveItems(){
-    this.count --;
+    if(this.count > 1){
+      this.count --;
+    }
+  
   }
 }

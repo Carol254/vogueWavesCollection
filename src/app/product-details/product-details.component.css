@@ -1,6 +1,6 @@
 .btn{
-    background-color: #eaaa30;
-    color: #000;
+    background-color: #000;
+    color: #eaaa30;
     font-weight: bold;
 }
 .btn:hover{
@@ -40,6 +40,9 @@
 .num{
     background-color: #eaaa30;
     color: #000;
-    display: flex;
+    width: 30%;
     justify-content: space-around;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
 }

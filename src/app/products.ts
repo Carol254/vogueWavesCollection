@@ -19,14 +19,14 @@ export const products:any[] = [
       image:'/assets/m-2.jpg',
       name: 'Head-wraps',
         price: 500,
-      description:'elevate your style,add flair to any outfit'
+      description:'Elevate your style,add flair to any outfit'
     },
     {
         id: 3,
       image:'/assets/m-4.jpg',
       name: 'Blue Jeans',
       price: 800,
-      description: 'perfect for everyday wear and fashion'
+      description: 'Perfect for everyday wear and fashion'
     },
     {
         id: 4,

@@ -11,6 +11,7 @@ import { CartService } from '../services/service-cart.service';
 export class ProductDetailsComponent implements OnInit {
 
   product:Product | undefined;
+  count: number = 1;
 
   constructor(private route:ActivatedRoute,
               private cartService:CartService){}
@@ -27,5 +28,13 @@ export class ProductDetailsComponent implements OnInit {
     this.cartService.addToCart(product);
     window.alert('Your product has been added to the cart!');
     console.log(); 
+  }
+
+  onAddItems(){
+    this.count ++;
+  }
+
+  onRemoveItems(){
+    this.count --;
   }
 }

@@ -19,9 +19,9 @@
         <hr>
         <div class="items mb-3">
             <div class="num">
-                <span>-</span>
-                <span>1</span>
-                <span>+</span>
+                <span class="numItems" (click)="onRemoveItems()">-</span>
+                <span>{{count}}</span>
+                <span class="numItems"(click)="onAddItems()">+</span>
             </div>
             <div>
                 <p>Only 12 items Left!Don't miss it</p>

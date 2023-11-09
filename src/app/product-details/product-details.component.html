@@ -5,43 +5,46 @@
         <img class="prod-details-img" [src]="product.image">
     </div>
     <div class="col-6">
-        <h3>{{product.name}}</h3>
-        <h4><b>Price:</b>{{totalPrice| currency}}</h4>
-        <p><b>Description: </b>{{product.description}}</p>
-        <hr>
-        <div class="d-flex">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-half"></i>
-            <i class="bi bi-star"></i>
-        </div>
-        <hr>
-        <div class="items mb-3">
-            <div class="num">
-                <span class="numItems" (click)="onRemoveItems()">-</span>
-                <span>{{count}}</span>
-                <span class="numItems"(click)="onAddItems()">+</span>
+        <div class="p-4">
+            <h3>{{product.name}}</h3>
+            <h4><b>Price:</b>{{totalPrice| currency}}</h4>
+            <p><b>Description: </b>{{product.description}}</p>
+            <hr>
+            <div class="d-flex">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
             </div>
-            <div>
-                <p>Only 12 items Left!Don't miss it</p>
+            <hr>
+            <div class="items mb-3">
+                <div class="num">
+                    <span class="numItems" (click)="onRemoveItems()">-</span>
+                    <span>{{count}}</span>
+                    <span class="numItems"(click)="onAddItems()">+</span>
+                </div>
+                <div>
+                    <p>Only 12 items Left!Don't miss it</p>
+                </div>
+            </div>
+            <div class="purchaseBtns">
+                <button class="btn">Buy Now</button>
+                <button class="btnAdd mx-5 px-2" (click)="addToCart(product)">Add to cart</button>
+            </div>
+    
+            <div class="delivery">
+                <div class="card p-2">
+                    <h6> <span><i class="bi bi-truck m-2"></i></span>Free Delivery</h6>
+                    <p><u>Enter your Postal code Delivery Availability</u></p>
+                </div>
+                <div class="card   p-2">
+                    <h6><span><i class="bi bi-file-check m-2"></i></span>Return Delivery</h6>
+                    <p>Free 30 Days Delivery Returns.<u>Details</u></p>
+                </div>
             </div>
         </div>
-        <div class="purchaseBtns">
-            <button class="btn">Buy Now</button>
-            <button class="btnAdd mx-5 px-2" (click)="addToCart(product)">Add to cart</button>
-        </div>
-
-        <div class="delivery">
-            <div class="card p-2">
-                <h6> <span><i class="bi bi-truck m-2"></i></span>Free Delivery</h6>
-                <p><u>Enter your Postal code Delivery Availability</u></p>
-            </div>
-            <div class="card   p-2">
-                <h6><span><i class="bi bi-file-check m-2"></i></span>Return Delivery</h6>
-                <p>Free 30 Days Delivery Returns.<u>Details</u></p>
-            </div>
-        </div>
+  
    
     </div>
 </div>

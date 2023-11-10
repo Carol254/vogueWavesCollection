@@ -16,3 +16,11 @@
     text-decoration: none;
     color: #000;
 }
+.paymentMethods{
+    column-gap: 5px;
+}
+.applyCoupon{
+    background-color: #000;
+    color: #eaaa30;
+    cursor: pointer;
+}

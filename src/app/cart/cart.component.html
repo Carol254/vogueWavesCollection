@@ -10,12 +10,15 @@
                 <p>{{item.price | currency}}</p>
               </div>
             </div>
-            <div class="cart-total">
-              <h6>Total: {{getTotalPrice() | currency}}</h6> 
-            </div>      
-            <p>
+            <div class="d-flex total">
+              <div>
                 <a routerLink="/shipping" class="btn prices">Shipping Prices</a>
-            </p>
+              </div>
+              <div class="cart-total">
+                <h6>Total: {{getTotalPrice() | currency}}</h6> 
+              </div>        
+            </div>
+          
         </div>
 
         <div *ngIf="items.length == 0">

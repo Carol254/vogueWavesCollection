@@ -2,12 +2,13 @@
     <div class="d-flex flex-wrap gap-4">
         <div *ngFor="let product of products">
             <div class="card">
-                <img class="card-img" src="{{product.image}}">
+                <img class="card-img" src="{{product.image}}" [routerLink]="['/products', product.id]">
                 <a [title]="product.name + ' details'" style="text-align: center; color: black; text-decoration: none; font-weight: bold;" [routerLink]="['/products', product.id]">{{product.name}}</a>
+                <p style="font-weight: bold; text-align: center;" [routerLink]="['/products', product.id]">{{product.price| currency}}</p>
                 <!-- <p *ngIf="product.description">
                    {{product.description}}
                 </p> -->
-                <button class="btn m-3" (click)="share()"> Share</button>
+                <button class="btn mx-3 mb-1" (click)="share()"> Share</button>
                 <!-- <app-product-alerts [product]="product" (notify)="onNotify()" style="text-align: center;"></app-product-alerts> -->
             </div>
         </div>

@@ -25,3 +25,14 @@
     cursor: pointer;
     font-weight: bold;
 }
+.editInfo{
+    justify-content: space-between;
+}
+.prodDetails{
+    justify-content: space-evenly;
+}
+.prodDetails > img{
+    width: 50px;
+    height:50px;
+    object-fit: contain;
+}

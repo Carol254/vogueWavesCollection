@@ -1,11 +1,15 @@
 <h2>Cart Details</h2>
 <div class="d-flex _container">
   <div class="col-8 p-2">
-      <div class="card">
+      <div class="card p-2">
+        <h5>Review Item and Shipping</h5>
           <div *ngIf="items.length > 0">
             <div class="cart-item" *ngFor="let item of items">
-                <h3>{{item.name}}</h3>
-                <h3>{{item.price | currency}}</h3>
+              <div class="d-flex prodDetails">
+                <img [src]="item.image">
+                <h6>{{item.name}}</h6>
+                <p>{{item.price | currency}}</p>
+              </div>
             </div>
             <div class="cart-total">
               <h3>Total: {{getTotalPrice() | currency}}</h3> 
@@ -17,6 +21,12 @@
 
         <div *ngIf="items.length == 0">
             <h3>Cart is empty!</h3>
+        </div>
+      </div>
+      <div class="card p-2">
+        <div class="d-flex editInfo">
+          <div>Delivery Information</div>
+          <div class="btn">Edit Information</div>
         </div>
       </div>
 

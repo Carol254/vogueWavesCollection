@@ -20,7 +20,8 @@
     column-gap: 5px;
 }
 .applyCoupon{
-    background-color: #000;
-    color: #eaaa30;
+    background-color:#eaaa30;
+    color: #000;
     cursor: pointer;
+    font-weight: bold;
 }

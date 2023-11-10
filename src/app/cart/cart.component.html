@@ -3,8 +3,8 @@
   <div class="col-6">
       <div *ngIf="items.length > 0">
           <div class="cart-item" *ngFor="let item of items">
-              <h3 class="cartItems">{{item.name}}</h3>
-              <h3 class="cartItems">{{item.price | currency}}</h3>
+              <h3>{{item.name}}</h3>
+              <h3>{{item.price | currency}}</h3>
           </div>
           <div class="cart-total">
             <h3>Total: {{getTotalPrice() | currency}}</h3> 

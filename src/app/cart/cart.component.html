@@ -6,7 +6,7 @@
           <div *ngIf="items.length > 0">
             <div class="cart-item" *ngFor="let item of items">
               <div class="d-flex prodDetails">
-                <img [src]="item.image">
+                <img [src]="item.image" class="m-1">
                 <h6>{{item.name}}</h6>
                 <p>{{item.price | currency}}</p>
               </div>

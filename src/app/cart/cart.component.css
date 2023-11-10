@@ -30,6 +30,7 @@
 }
 .prodDetails{
     justify-content: space-evenly;
+    row-gap: 5px;
 }
 .prodDetails > img{
     width: 50px;

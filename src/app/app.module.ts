@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { OffersComponent } from './offers/offers.component';
 import { FooterComponent } from './footer/footer.component';
+import { AccountDetailsComponent } from './account-details/account-details.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './footer/footer.component';
     CartComponent,
     ShippingComponent,
     OffersComponent,
-    FooterComponent
+    FooterComponent,
+    AccountDetailsComponent
   ],
   imports: [
     BrowserModule,

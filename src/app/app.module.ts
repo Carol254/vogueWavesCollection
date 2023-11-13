@@ -49,6 +49,7 @@ import { AccountDetailsComponent } from './account-details/account-details.compo
       {path:'shipping',component:ShippingComponent},
       {path:'offers',component:OffersComponent},
       {path:'about-us',component:AboutUsComponent},
+      {path:'account-details',component:AccountDetailsComponent},
       {path: '**',component:WildCardComponent}
     ])
   ],

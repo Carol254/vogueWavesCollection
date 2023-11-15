@@ -49,10 +49,69 @@ export const products:any[] = [
       price: 600,
       description: 'For a touch of elegance and flair'
     },
-    { id: 7,
+    { 
+      id: 7,
       image:'/assets/m-8.jpg',
       name: 'White Jumpsuits',
       price: 850,
       description: 'A versatile addition to your wardrobe for any occasions.'
+    },
+    {
+      id: 8,
+      image:'/assets/m-9.jpg',
+      name: 'Orange Top',
+      price: 950,
+      description: 'Adorable top for all occassions.'
+    },
+    {
+      id: 9,
+      image:'/assets/m-10.jpg',
+      name: 'Stripped Top',
+      price: 550,
+      description: 'For a great blend for outtings.'
+    },
+    {
+      id: 10,
+      image:'/assets/m-11.jpg',
+      name: 'Black Jacket',
+      price: 850,
+      description: 'You wouldnt have to worry about the cold weather.'
+    },
+    {
+      id: 11,
+      image:'/assets/m-12.jpg',
+      name: 'Casual Khaki',
+      price: 1050,
+      description: 'Great for outdoor occassions.'
+    },
+    {
+      id: 12,
+      image:'/assets/m-13.jpg',
+      name: 'Brown Trench Coat',
+      price: 450,
+      description: 'You wouldnt have to worry about the cold weather.Never!'
+    },
+    {
+      id: 13,
+      image:'/assets/m-14.jpg',
+      name: 'Yellow skirt',
+      price: 750,
+      description: 'Bring out your authentic and aesthetic self.'
+    },
+    {
+      id: 14,
+      image:'/assets/m-15.jpg',
+      name: 'Womens Brown Trench',
+      price: 500,
+      description: 'Beat the cold weather.'
+    },
+    {
+      id: 15,
+      image:'/assets/m-16.jpg',
+      name: 'Pink Trench Coat',
+      price: 650,
+      description: 'Classy and Sassy coat.'
     }
+  
+
   ]

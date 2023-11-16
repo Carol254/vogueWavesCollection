@@ -1,16 +1,27 @@
-<p>account-details works!</p>
-<form>
-    <div>
-        <label for="name">
-          Email *
+<div class="_container">
+  <div class="formCont">
+    <form>
+      <div>
+          <label for="fname">
+            First Name
+          </label>
+          <input id="fname" type="text" formControlName="fname" class="form-control">
+      </div>
+      <div>
+        <label for="lname">
+          Last Name
         </label>
-        <input id="name" type="text" formControlName="name" class="form-control">
+        <input id="lname" type="text" formControlName="lname" class="form-control">
     </div>
-    <div>
-        <label for="address">
-          Card Holder Name *
-        </label>
-        <input id="address" type="text" formControlName="address" class="form-control">
-    </div>
-    <button class="btn mt-3" type="submit">Purchase</button>
-</form>
+      <div>
+          <label for="address">
+            Email Address
+          </label>
+          <input id="address" type="text" formControlName="address" class="form-control">
+      </div>
+      <button class="btn mt-3" type="submit">Submit</button>
+  </form>
+  </div>
+
+</div>
+

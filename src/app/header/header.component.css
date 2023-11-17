@@ -1,12 +1,12 @@
 .navbar{
-    background-color: black !important;
+    background-color: #eaaa30 !important;
 }
 
 .nav-link,.navbar-brand{
-    color: #fff;
+    color: #000;
 }
 .bi-search,.bi-cart4{
-    color: #fff;
+    color: #000;
     margin: auto;
 }
 .bi{

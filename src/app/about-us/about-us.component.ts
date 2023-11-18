@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent {
+  services:any[] =[
+    {
+      img:'',
+      txt:'lorem ipsum'
+    },
+    {
+      img:'',
+      txt:'lorem ipsum'
+    },
+    {
+      img:'',
+      txt:'lorem ipsum'
+    },
+    {
+      img:'',
+      txt:'lorem ipsum'
+    }
+];
 
 }

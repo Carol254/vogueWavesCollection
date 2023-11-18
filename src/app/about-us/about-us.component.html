@@ -1,3 +1,19 @@
 <div class="main">
-    <p>About us works!</p>
+    <div class="_content">
+        <div class="col-8">
+            <h3>About Us</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quos nihil quibusdam natus incidunt veritatis doloribus, 
+                voluptatibus voluptatem recusandae accusamus dolorem expedita rem tempore aspernatur reiciendis ratione laborum quas sed.
+            </p>
+
+            <h4>Our Services</h4>
+            <div class="services" *ngFor="let service of services">
+                <div class="card">
+                    {{service.txt}}
+                </div>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
 </div>

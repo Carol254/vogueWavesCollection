@@ -1,3 +1,11 @@
 .main{
     height: 100vh;
 }
+.card{
+    width: 100px;
+    height: 100px;
+}
+.services{
+    display: flex !important;
+    flex-direction: row;
+}

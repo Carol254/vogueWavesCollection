@@ -6,6 +6,7 @@
     height: 100px;
 }
 .services{
-    display: flex !important;
-    flex-direction: row;
+    display:flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
 }

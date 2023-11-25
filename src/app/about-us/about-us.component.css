@@ -5,6 +5,9 @@
     width: 100px;
     height: 100px;
 }
+.card > p {
+    text-align: center;
+}
 .services{
     display:flex;
     flex-direction: row !important;
